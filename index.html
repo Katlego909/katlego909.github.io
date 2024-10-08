@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="./img/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>KH | Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#">
+            <h1 class="logo">KH</h1>
+          </a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img src="img/x.svg" onclick="closemenu()" />
+          </ul>
+          <img style="color: #fff" src="img/menu.svg" onclick="openmenu()" />
+        </nav>
+
+        <div class="header-text">
+          <p>Freelance Frontend Web Developer</p>
+          <h1>
+            Hi, I'm <span>Katlego!</span> <br />
+            a Freelance Frontend Web Developer
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!---About--->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/portfolio-img.png" alt="Image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I’m a bit of a problem solver at heart, and I love turning ideas into interactive, meaningful web experiences. I’ve spent the past few years building websites that don’t just look good but feel right—smooth, intuitive, and responsive on any device. <br> <br> What excites me most about frontend development is the blend of creativity and logic. I get to take a design, breathe life into it with code, and watch it transform into something people can actually use and enjoy.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+
+              <!-- <p class="tab-links" onclick="opentab('certification')">
+                Certification
+              </p> -->
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Designing, Wire-framing & Prototyping</span><br />Figma,
+                  Adobe XD, Affinity Designer
+                </li>
+                <li><span>Front-end</span><br />HTML, CSS, Tailwind CSS & Bootstrap</li>
+                <li><span>Languages</span><br />JavaScript & Python</li>
+                <li>
+                  <span>Back-end</span><br />NodeJs, ExpressJS & Django
+                </li>
+                <li><span>Frameworks</span><br />ReactJS & VueJS</li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />Designing and developing web, mobile app, and multimedia interfaces. Crafting responsive, user-centered designs across various platforms, from websites to interactive digital media.
+                </li>
+                <li><span>2018 - 2021</span><br />Web design, development, and multimedia production. Built modern websites and created engaging multimedia content, blending design with functionality.</li>
+              </ul>
+            </div>
+
+            <!-- <div class="tab-content" id="certification">
+              <ul>
+                <li>
+                  <span>2023</span><br />Introduction to Design Thinking - Great
+                  Learning
+                </li>
+                <li>
+                  <span>2023</span><br />UI/UX Design for Beginners - Great
+                  Learning
+                </li>
+                <li>
+                  <span>2023</span><br />Programming with Python 3.x -
+                  Simplilearn
+                </li>
+                <li>
+                  <span>2022</span><br />MTN Business App Academy (Mobile App
+                  Development) - ITVarsity
+                </li>
+                <li>
+                  <span>2022</span><br />Introduction to Data Analytics -
+                  Simplilearn
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---Services--->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <img src="img/code.svg" alt="code" />
+            <h2>Web Development</h2>
+            <p>
+              Whether you need a web app for your business or a unique platform,
+              I have the expertise to build it to your exact specifications.
+            </p>
+            <a href="#contact" class="cta" >Let's Work </a>
+          </div>
+          <div>
+            <img src="img/crop.svg" alt="code" />
+            <h2>UI/UX Design</h2>
+            <p>
+              I gather insights into your target audience to create a design
+              that resonates with your users.
+            </p>
+            <a href="#contact" class="cta">Let's Work</a>
+          </div>
+          <div>
+            <img src="img/phone.svg" alt="code" />
+            <h2>App Development</h2>
+            <p>
+              I provide app development services for both iOS and Android
+              platforms using Flutter, and React Native.
+            </p>
+            <a href="#contact" class="cta">Let's Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---Work Portfolio--->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Latest Work</h1>
+
+        <!-- <div class="work-grid">
+                <img src="img/hero.jpg" class="project-image">
+                <div class="grid-info">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio neque saepe fuga eveniet ullam eaque, eum sunt iure libero minus? Tenetur esse nostrum unde quis asperiores possimus voluptatem est molestias!</p>
+                    <div class="grid-links">
+                        <a href="#" class="grid-link">Visit Website</a>
+                        <a href="#" class="grid-link">Github</a>
+                    </div>
+                </div>
+            </div> -->
+
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work-1.png" alt="work1" />
+            <div class="layer">
+              <h3>Funti3r Micro-tasking</h3>
+              <p>
+                UI/UX Design & Website Development
+              </p>
+
+              <div class="work-tools">
+                <p class="tool">HTML</p>
+                <p class="tool">Bootstrap</p>
+                <p class="tool">JS</p>
+              </div>
+
+              <div class="link-icons">
+                <div>
+                  <a href="https://funti3r.xyz/"><img src="img/link-45deg.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="img/github.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" alt="work 2" />
+            <div class="layer">
+              <h3>Funti3r Rewards</h3>
+              <p>
+                UI/UX Design & Website Development
+              </p>
+
+              <div class="work-tools">
+                <p class="tool">HTML</p>
+                <p class="tool">CSS</p>
+                <p class="tool">JS</p>
+              </div>
+
+              <div class="link-icons">
+                <div>
+                  <a href="https://funti3rrewards.netlify.app/"><img src="img/link-45deg.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="img/github.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.png" alt="work 3" />
+            <div class="layer">
+              <h3>Edulink</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                laborum.
+              </p>
+
+              <div class="work-tools">
+                <p class="tool">VueJs</p>
+                <p class="tool">HTML</p>
+                <p class="tool">CSS</p>
+                <p class="tool">JS</p>
+              </div>
+
+              <div class="link-icons">
+                <div>
+                  <a href="https://edulinklearning.netlify.app/"><img src="img/link-45deg.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="img/github.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="work">
+            <img src="img/work-3.png" alt="work 4" />
+            <div class="layer">
+              <h3>E-learning App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                laborum.
+              </p>
+
+              <div class="work-tools">
+                <p class="tool">HTML</p>
+                <p class="tool">CSS</p>
+                <p class="tool">Bootstrap</p>
+                <p class="tool">JS</p>
+              </div>
+
+              <div class="link-icons">
+                <div>
+                  <a href=""><img src="img/link-45deg.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="img/github.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="work">
+            <img src="img/work-4.jpg" alt="work 5" />
+            <div class="layer">
+              <h3>E-learning App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                laborum.
+              </p>
+
+              <div class="work-tools">
+                <p class="tool">HTML</p>
+                <p class="tool">CSS</p>
+                <p class="tool">JS</p>
+              </div>
+
+              <div class="link-icons">
+                <div>
+                  <a href=""><img src="img/link-45deg.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="img/github.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="work">
+            <img src="img/work-3.png" alt="work 6" />
+            <div class="layer">
+              <h3>E-learning App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                laborum.
+              </p>
+
+              <div class="work-tools">
+                <p class="tool">VueJs</p>
+                <p class="tool">HTML</p>
+                <p class="tool">CSS</p>
+                <p class="tool">JS</p>
+              </div>
+
+              <div class="link-icons">
+                <div>
+                  <a href=""><img src="img/link-45deg.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="img/github.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- <a href="#" class="btn btn-more">See more</a> -->
+      </div>
+    </div>
+
+    <!---Contact--->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a href="mailto:katlego.hlangwane@gmail.com">
+              <p>
+                <img src="img/send.svg" alt="" /> katlego.hlangwane@gmail.com
+              </p>
+            </a>
+            <a href="tel:+27671637970">
+              <p><img src="img/telephone.svg" alt="" /> +27 67 163 7970</p>
+            </a>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/katlego-hlangwane-086650219/" target="_blank"><img src="img/linkedin.svg" alt="" /></a>
+              <a href="https://github.com/katlego909" target="_blank"><img src="img/github.svg" alt="" /></a>
+            </div>
+            <!-- <a href="" disabled="true" download class="btn btn-download"
+              >Download CV</a> -->
+          </div>
+
+          <div class="contact-right">
+            <form action="https://formsubmit.co/katlego.hlangwane@gmail.com" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="name@email.com"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024. Created by KH</p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
