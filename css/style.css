@@ -495,17 +495,10 @@ nav img {
     }
 
     #header {
-        height: 60vh; /* Maintain height for larger screens */
+        height: 60vh;
         background-image: url("../img/bg.jpg");
-        background-size: cover; /* Ensures the image covers the entire area */
-        background-position: center; /* Center the image for better visual appeal */
-        display: flex; /* Enables flexbox layout */
-        align-items: center; /* Vertically center content */
-        justify-content: center; /* Horizontally center content */
-        color: white; /* Default text color for contrast */
-        padding: 20px; /* Add some padding for inner content */
+        background-size: cover;
     }
-    
 
     .header-text {
         margin-top: 30%;
